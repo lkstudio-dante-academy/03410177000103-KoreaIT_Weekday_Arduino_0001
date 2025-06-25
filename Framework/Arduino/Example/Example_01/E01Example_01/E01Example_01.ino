@@ -1,7 +1,18 @@
+/**
+* 상수
+*/
+const int NUMBER_LED = 13;
+
+/** 초기화 */
 void setup() {
-  // put your setup code here, to run once:
+  pinMode(NUMBER_LED, OUTPUT);
 }
 
+/** 상태를 갱신한다 */
 void loop() {
-  // put your main code here, to run repeatedly:
+  digitalWrite(NUMBER_LED, HIGH);
+  delay(500);
+
+  digitalWrite(NUMBER_LED, LOW);
+  delay(500);
 }
